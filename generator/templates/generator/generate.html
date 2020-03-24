@@ -1,0 +1,15 @@
+<html>
+<body>
+    <h1>Generate Password</h1>
+
+    <form>
+        {{ form.as_p }}
+        <input type="submit" value="Generate">
+    </form>
+
+    <div>
+        {% if password %}
+            Password: {{ password }}
+        {% endif %}
+    </div>
+<body>
